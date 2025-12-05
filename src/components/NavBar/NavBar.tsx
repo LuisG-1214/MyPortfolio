@@ -1,5 +1,5 @@
-import { AppBar, MenuItem, Toolbar, styled, Typography } from "@mui/material"
-import { useNavigate } from "react-router-dom";
+import { AppBar, MenuItem, Toolbar, styled,} from "@mui/material"
+//import { useNavigate } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 
 const StyledToobar = styled(Toolbar)(() => ({
@@ -9,7 +9,7 @@ const StyledToobar = styled(Toolbar)(() => ({
     }))
 
 const NavBar = () => {
-    const navigate = useNavigate();
+   // const navigate = useNavigate();
     return (
         <>
             <AppBar position="absolute">

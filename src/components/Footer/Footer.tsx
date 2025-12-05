@@ -14,7 +14,7 @@ const Footer = () => {
 
     const navigate = useNavigate();
 
-    const StyledFooter = styled("div") (({theme}) => ({
+    const StyledFooter = styled("div") (({}) => ({
         //backgroundColor: theme.palette.primary.main,
         display: "flex",
         alignItems: "center",

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, CssBaseline, Typography } from '@mui/material';
+import { Box, CssBaseline,} from '@mui/material';
 import { keyframes, styled } from '@mui/system';
 import Cards from './cards';
 
@@ -39,25 +39,25 @@ const StarLayer = styled(Box)<{ size: string; count: number; animationDuration: 
   },
 }));
 
-const Title = styled(Typography)({
-  position: 'absolute',
-  top: '50%',
-  left: '0',
-  right: '0',
-  color: '#FFF',
-  textAlign: 'center',
-  fontFamily: "'Lato', sans-serif",
-  fontWeight: 300,
-  fontSize: '50px',
-  letterSpacing: '10px',
-  marginTop: '-60px',
-  paddingLeft: '10px',
-  '& span': {
-    background: 'linear-gradient(to right, white, #38495a)',
-    WebkitBackgroundClip: 'text',
-    WebkitTextFillColor: 'transparent',
-  },
-});
+// const Title = styled(Typography)({
+//   position: 'absolute',
+//   top: '50%',
+//   left: '0',
+//   right: '0',
+//   color: '#FFF',
+//   textAlign: 'center',
+//   fontFamily: "'Lato', sans-serif",
+//   fontWeight: 300,
+//   fontSize: '50px',
+//   letterSpacing: '10px',
+//   marginTop: '-60px',
+//   paddingLeft: '10px',
+//   '& span': {
+//     background: 'linear-gradient(to right, white, #38495a)',
+//     WebkitBackgroundClip: 'text',
+//     WebkitTextFillColor: 'transparent',
+//   },
+// });
 
 const Projects: React.FC = () => {
   return (

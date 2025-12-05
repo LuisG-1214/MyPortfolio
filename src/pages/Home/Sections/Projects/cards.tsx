@@ -77,7 +77,7 @@ const Image = styled("img")({
 });
 
 
-const Overlay = styled(Box)(({ theme }) => ({
+const Overlay = styled(Box)(({}) => ({
   position: "absolute",
   inset: 0,
   backgroundColor: "rgba(0, 0, 0, 0.8)",
