@@ -5,12 +5,12 @@ import { styled } from "@mui/system";
 import CloseIcon from "@mui/icons-material/Close";
 
 // Importando imagens dos ícones
-import html from "../../assets/images/html.png";
-import css from "../../assets/images/css.png";
-import js from "../../assets/images/js.png";
-import reactjs from "../../assets/images/reactjs.png";
-import nodejs from "../../assets/images/nodejs.png";
-import bootstrap from "../../assets/images/bootstrap.png";
+import html from "../../assets/Images/html.png";
+import css from "../../assets/Images/css.png";
+import js from "../../assets/Images/js.png";
+import reactjs from "../../assets/Images/reactjs.png";
+import nodejs from "../../assets/Images/nodejs.png";
+import bootstrap from "../../assets/Images/bootstrap.png";
 
 // Importando imagens dos certificados
 import certHtml from "../../assets/Images/CertHtml.jpg";

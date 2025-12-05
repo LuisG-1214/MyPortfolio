@@ -1,6 +1,6 @@
 import {Container, styled, Typography, Box,} from "@mui/material"
 import Grid from "@mui/material/Grid2"
-import Avatar from "../../../../assets/images/FT.jpg"
+import Avatar from "../../../../assets/Images/FT.jpg"
 import SchoolIcon from '@mui/icons-material/School';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail'
 import StyledButton from "../../../../components/StyledButton/StyledButton"

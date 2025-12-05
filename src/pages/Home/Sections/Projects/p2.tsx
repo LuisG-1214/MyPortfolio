@@ -14,7 +14,7 @@ const projects = [
     title: "Palette Creator",
     description:
       "Gerador de paletas de cores com manipulação de DOM, conversões HEX e HSL, e layout SPA responsivo.",
-    image: "../src/assets/images/palette1.jpg",
+    image: "/src/assets/Images/palette1.jpg",
     link: "https://linktr.ee/LuisGustavoAlves1214",
     techs: ["HTML", "CSS", "JavaScript"],
   },
@@ -22,7 +22,7 @@ const projects = [
     title: "Dev Burguer",
     description:
       "Sistema de cardápio com carrinho, feito com TailwindCSS, JavaScript e Mobile-First.",
-    image: "../src/assets/images/capa.jpg",
+    image: "/src/assets/Images/capa.jpg",
     link: "https://linktr.ee/LuisGustavoAlves1214",
     techs: ["HTML", "TailwindCSS", "JavaScript"],
   },
@@ -30,7 +30,7 @@ const projects = [
     title: "PetLife",
     description:
       "Landing page para clínica pet, moderna, responsiva e com elementos dinâmicos.",
-    image: "../src/assets/images/petlife1.jpg",
+    image: "/src/assets/Images/petlife1.jpg",
     link: "https://linktr.ee/LuisGustavoAlves1214",
     techs: ["HTML", "CSS", "JavaScript"],
   },
