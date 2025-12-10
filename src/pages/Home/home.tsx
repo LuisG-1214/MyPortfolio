@@ -1,7 +1,7 @@
 import Hero from "./Sections/Hero/hero"
 import NavBar from "../../components/NavBar/NavBar"
 import About from "./Sections/About/About"
-import Projects from "./Sections/Projects/projects"
+import ProjectCarousel from "./Sections/Projects/projects"
 import Footer from "../../components/Footer/Footer"
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
         <NavBar />
         <Hero />
         <About />
-        <Projects />
+        <ProjectCarousel /> 
         <Footer />
       </div>
     )

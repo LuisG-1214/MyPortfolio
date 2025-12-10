@@ -3,6 +3,32 @@ import { motion } from "framer-motion";
 import SchoolIcon from '@mui/icons-material/School';
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 
+// Importando as imagens das tecnologias
+import js from "../../../../assets/Images/js.png";
+import reactjs from "../../../../assets/Images/reactjs.png";
+import nodejs from "../../../../assets/Images/nodejs.png";
+import html from "../../../../assets/Images/html.png";
+import bootstrap from "../../../../assets/Images/bootstrap.png";
+import mui from "../../../../assets/Images/mui.jpg"; // Supondo que você tenha um ícone para o Material-UI
+import git from "../../../../assets/Images/git.png"; // Supondo que você tenha um ícone para o Git
+import mysql from "../../../../assets/Images/mysql.png"; // Supondo que você tenha um ícone para o MySQL
+
+interface Skill {
+  id: number;
+  name: string;
+  img: string;
+}
+
+const skills: Skill[] = [
+  { id: 1, name: "JavaScript & TS", img: js },
+  { id: 2, name: "React.js", img: reactjs },
+  { id: 3, name: "Node.js", img: nodejs },
+  { id: 4, name: "HTML & CSS", img: html },
+  { id: 5, name: "BootStrap & Sass", img: bootstrap },
+  { id: 6, name: "Material UI", img: mui },
+  { id: 7, name: "Git & GitHub", img: git },
+  { id: 8, name: "Mysql", img: mysql },
+]
 
 const About = () => {
     const divVariants = {
@@ -146,28 +172,40 @@ const About = () => {
                 </Typography>
                 
                 <Grid2 container spacing={3} justifyContent={"center"}>
-                  {[
-                    "JavaScript & TypeScript",
-                    "React.js",
-                    "Node.js",
-                    "HTML & CSS",
-                    "BootStrap & Sass",
-                    "Material UI",
-                    "Git & GitHub",
-                    "Python",
-                  ].map((skill, index) => (
-                    <Grid2 size={{xs: 6, sm: 3}} key={index}>
+                  {skills.map((skill) => (
+                    <Grid2 size={{xs: 6, sm: 3}} key={skill.id}>
                       <Box
                         sx={{
-                          p:2,
+                          position: 'relative', // Essencial para posicionar o badge
+                          p: 2,
+                          pb: 2, // Aumenta o padding inferior para dar espaço ao badge
                           bgcolor: "white",
                           boxShadow: 1,
                           borderRadius: 1,
                           textAlign: "center",
-                          "&:hover": { boxShadow: 3 },
+                          transition: 'all 0.3s ease-in-out',
+                          "&:hover": {
+                            cursor: "pointer",
+                            borderColor: '#2196f3',
+                            boxShadow: `0 8px 24px rgba(33, 150, 243, 0.3),  0 0 0 2px rgba(33, 150, 243, 0.1)`,
+                            transform: 'translateY(-5px)',
+                          },
                         }}
                       >
-                        <Typography variant="subtitle1">{skill}</Typography>
+                        <Typography variant="subtitle1">{skill.name}</Typography>
+                        <Box
+                          component="img"
+                          src={skill.img}
+                          alt={skill.name}
+                          sx={{
+                            width: '36px',
+                            height: '36px',
+                            position: 'absolute',
+                            bottom: '-10px', 
+                            right: '10px',
+                            border: 'none'
+                          }}
+                        />
                       </Box>
                     </Grid2>
                   ))}
