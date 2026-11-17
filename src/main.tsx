@@ -1,14 +1,17 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import { CssBaseline, ThemeProvider } from '@mui/material'
-import theme from './theme.ts'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import { MotionConfig } from "motion/react";
+import App from "./App";
+import "./index.css";
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <App />
-    </ThemeProvider>
-  </React.StrictMode>,
-)
+createRoot(document.getElementById("root")!).render(
+  <StrictMode>
+    <BrowserRouter>
+      {/* reducedMotion="user": respeita quem pediu menos animação no sistema */}
+      <MotionConfig reducedMotion="user">
+        <App />
+      </MotionConfig>
+    </BrowserRouter>
+  </StrictMode>,
+);
